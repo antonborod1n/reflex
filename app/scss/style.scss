@@ -3,8 +3,202 @@
 @import 'reset'; /* Сброс */
 @import 'global'; /* Глобальные стили */
 
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.menu {
+    padding-right: 15px;
+    
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        padding-left: 35px;
+        padding-right: 45px;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__list-link {
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(54, 56, 56, 0.9033);
+        @extend %montserrat-700;
+    }
+}
 
 
+.footer {
+    background-color: $footer-bg;
+    &__content {
+        padding: 60px 0 80px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__info {
+    width: 540px;
+    &-title {
+        @extend %montserrat-700;
+        font-size: 16px;
+        line-height: 23px;
+        color: $title;
+        margin-bottom: 14px;
+    }
+    &-text {
+        margin-bottom: 16px;
+        max-width: 475px;
+    }
+    &-mail {
+        display: inline-block;
+        @extend %opensans-600;
+        font-size: 14px;
+        line-height: 28px;
+        color: $title;
+        margin-bottom: 22px;
+        padding-left: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url(../images/email.svg);
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 16px;
+            height: 12px;
+        }
+    }
+}
+
+.footer__form {
+    display: flex;
+    &-input {
+        width: 100%;
+        border-radius: 21px;
+        border: 1px solid rgba($title, .7);
+        padding: 6px 10px 6px 18px;
+        background-color: transparent;
+        &::placeholder {  
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px; 
+            color: #A1A1A1;
+        }
+    }
+    &-btn {
+        @extend %opensans-600;
+        background-color: $title;
+        border: none;
+        border-radius: 21px;
+        color: #FFFFF0;
+        padding: 9px 20px;
+        margin-left: 9px;
+        cursor: pointer;
+    }
+}
+
+.footer__social {
+    width: 125px;
+    margin-right: auto;
+    margin-left: 100px;
+    &-item {
+        margin-bottom: 15px;
+    }
+    &-link {
+        @extend %opensans-600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+        padding-left: 28px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &-link--fb::before {
+        content: '';
+        background-image: url(../images/social/facebook.svg);
+    }
+    &-link--inst::before {
+        content: '';
+        background-image: url(../images/social/instagram.svg);
+        width: 14px;
+        height: 14px;
+        top: 4px;
+        left: 0;
+    }
+    &-link--pin::before {
+        content: '';
+        background-image: url(../images/social/pinterest.svg);
+    }
+    &-link--ws::before {
+        content: '';
+        background-image: url(../images/social/whatsapp.svg);
+        width: 14px;
+        height: 14px;
+        top: 4px;
+        left: 0;
+    }
+    &-link--yt::before {
+        content: '';
+        background-image: url(../images/social/youtube.svg);
+        width: 18px;
+        height: 12px;
+        top: 4px;
+        left: 0;
+    }
+}
+
+.footer__menu {
+    margin-right: 60px;
+    width: 125px;
+    &-item {
+        margin-bottom: 15px;
+    }
+    &-link {
+        @extend %opensans-600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+    }
+}
+
+.footer__copy {
+    background-color: $title;
+    &-text {
+        padding: 42px 0;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #A1A1A1;
+        & a {
+            color: #A1A1A1; 
+            text-decoration: none;
+        }
+    }
+}
 
 
 
