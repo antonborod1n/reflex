@@ -5,6 +5,8 @@ body {
     font-size: 16px;
     line-height: 27px;
     @extend %opensans-400;
+    overflow-x: hidden;
+    min-width: 320px;
 }
 
 .wrapper {
@@ -28,4 +30,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.container-big {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 
