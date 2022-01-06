@@ -345,6 +345,12 @@
             max-width: 1148px;
         }
     }
+    &.gallery-page {
+        .gallery__img:nth-child(8){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
 }
 
 .mixitup-control-active {
