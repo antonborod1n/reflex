@@ -37,4 +37,25 @@ body {
     padding: 0 15px;
 }
 
+.breadcrumbs {
+    background-color: rgba($color: #DFDFDF, $alpha: 0.5); 
+    padding: 14px 0;
+    &__list {
+        display: flex;
+    }
+    &__item::after {
+        content: '/';
+        margin-right: 4px;
+    }
+    &__item:last-child:after {
+        display: none;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 28px;
+        color: $text;
+    }   
+}
+
+
 

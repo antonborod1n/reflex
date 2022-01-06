@@ -21,7 +21,6 @@
 
 .menu {
     padding-right: 15px;
-    
     &__list {
         display: flex;
     }
@@ -39,6 +38,11 @@
         line-height: 22px;
         color: rgba(54, 56, 56, 0.9033);
         @extend %montserrat-700;
+        &--active {
+            border-bottom: 2px solid rgba($color: #363838, $alpha: 0.7);
+            border-radius: 1px;
+            padding-bottom: 4px;
+        }
     }
 }
 
@@ -89,18 +93,14 @@
     }
 }
 
-
 /* TOP */
 
-
-/* .top {
+.top {
     background-image: url(../images/content/top-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-} */
-
-
+}
 
 /* COLLECTION */
 
@@ -554,6 +554,69 @@
         & a {
             color: #A1A1A1; 
             text-decoration: none;
+        }
+    }
+}
+
+
+/* ABOUT PAGE */
+
+.about {
+    &__top {
+        background-image: url(../images/about/about-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        text-align: center;
+        padding: 160px 0;
+        margin-top: -56px;
+    }
+    &__title {
+        @extend %montserrat-700;
+        font-size: 60px;
+        line-height: 80px;
+        color: $title;
+    }
+    &__content  {
+        padding: 130px 0 40px;
+        &-title {
+            @extend %montserrat-700;
+            color: $title;
+            font-size: 36px;
+            line-height: 60px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                height: 1px;
+                background-color: #6D7278;
+            }
+        }
+        &-text {
+            margin-left: 284px;
+            margin-bottom: 30px;
+        }
+        &-text:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__video {
+        background-image: url(../images/about/video-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        text-align: center;
+        min-height: 414px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-link {
+            cursor: pointer;
         }
     }
 }
