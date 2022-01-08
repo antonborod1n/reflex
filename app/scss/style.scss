@@ -95,12 +95,17 @@
 
 /* TOP */
 
-.top {
+/* .top {
     background-image: url(../images/content/top-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
+
+/* .top__slider-item {
+    display: flex;
+    justify-content: space-between;
+} */
 
 /* COLLECTION */
 
@@ -709,6 +714,105 @@
         margin: 0 auto;
     }
 }
+
+
+/* CONTACT PAGE */
+
+.map {
+    padding: 20px 0 55px;
+}
+
+.contact {
+    padding-bottom: 100px;
+    &__title {
+        @extend %montserrat-700;
+        color: $title;
+        font-size: 36px;
+        line-height: 60px;
+        padding-bottom: 35px;
+        margin-bottom: 40px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 1px;
+            background-color: #6D7278;
+        }
+    }
+    &__inner {
+        margin-left: 284px;
+    }
+    &__social {
+        display: flex;
+        margin-bottom: 20px;
+        &-item + .contact__social-item{
+            padding-left: 40px;
+        }
+    }
+    &__text {
+        margin: 20px 0 10px;
+    }
+    &__phone {
+        color: $text;
+        margin-bottom: 5px;
+    }
+    &__address {
+        color: $text;
+        margin-bottom: 16px;
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-input {
+            width: 49%;
+            border-radius: 20px;
+            border: 1px solid #DFDFDF;
+            padding: 6px 10px 6px 18px;
+            background-color: transparent;
+            margin-bottom: 10px;
+            &::placeholder {  
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px; 
+                color: #A1A1A1;
+            }
+        }
+        &-textarea {
+            width: 100%;
+            resize: none;
+            border-radius: 20px;
+            border: 1px solid #DFDFDF;
+            padding: 6px 10px 6px 18px;
+            background-color: transparent;
+            margin-bottom: 15px;
+            min-height: 125px;
+            &::placeholder {  
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px; 
+                color: #A1A1A1;
+            }
+        }
+        &-btn {
+            @extend %opensans-600;
+            background-color: $title;
+            border: none;
+            border-radius: 21px;
+            color: #FFFFF0;
+            padding: 9px 20px;
+            cursor: pointer;
+        }
+    }
+}
+
 
 
 
