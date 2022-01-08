@@ -1,5 +1,7 @@
 $(function () {
-    $('.lev__inner').slick({
+    /* $('.blog-page__content-item-slider-box').slick({
+        prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/next.svg" alt="arrow"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="images/icons/prev.svg" alt="arrow"></button>',
     });
 
     $('.contact__slider-inner').slick({
@@ -7,7 +9,7 @@ $(function () {
         slidesToScroll: 1,
         dots: true,
         arrows: false
-    }); 
+    });  */
 });
 
 $ (function(){

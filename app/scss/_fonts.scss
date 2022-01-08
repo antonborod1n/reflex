@@ -27,3 +27,13 @@
         url('../fonts/OpenSans-SemiBold.woff') format('woff');
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'OpenSans-LightItalic';
+    font-style: italic;
+    font-weight: 300;
+    src: local('OpenSans-Italic'),
+        url('../fonts/OpenSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-LightItalic.woff') format('woff');
+    font-display: swap;
+}

@@ -22,6 +22,11 @@ $footer-bg: #DFDFDF;
     font-weight: 600;
 }
 
+%opensans-300 {
+    font-family: 'OpenSans-LightItalic', sans-serif;
+    font-weight: 300;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
