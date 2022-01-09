@@ -57,5 +57,29 @@ body {
     }   
 }
 
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        margin: 0 15px; 
+    }
+    li.slick-active {
+        button {
+            background-color: $accent;
+        }
+    }
+    button {
+        border: none;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: $title;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+    }
+}
+
 
 
