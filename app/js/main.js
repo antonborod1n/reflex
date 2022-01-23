@@ -30,6 +30,10 @@ $ (function(){
         $('.rightside-menu').addClass('rightside-menu--close');
     });
 
+    $('.menu__btn-menu').on('click', function () {
+        $('.menu').toggleClass('menu--active');
+    });
+
     var mixer = mixitup('.gallery__inner', {
         load: {
             filter: '.all'
