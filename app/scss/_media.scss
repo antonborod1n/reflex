@@ -1,3 +1,9 @@
+@media (max-width: 1600px) {
+    .advantage__images {
+       display: none;
+    }
+}
+
 @media (max-width: 1366px) {
     .collection {
         grid-template-columns: repeat(3, 1fr);
@@ -7,7 +13,6 @@
         }
     }
 }
-
 
 @media (max-width: 1200px) {
     .top {
@@ -34,6 +39,14 @@
     .footer {
         &__info {
             width: 380px;
+        }
+    }
+    .about{
+        &__content-text {
+            margin-left: 0;
+        }
+        &__content {
+            padding: 40px 0;
         }
     }
 }
@@ -82,17 +95,19 @@
                 display: none;
             }
         }
-    }
-    .work__item--bottom {
-        margin-left: 0;
-    }
-    .work__item--top {
-        margin-left: 0;
-        padding-top: 0;
-    }
-    .work__item--top::after,
-    .work__item--bottom::after {
-        display: none;
+        &__item {
+            &--bottom {
+                margin-left: 0;
+            }
+            &--top {
+                margin-left: 0;
+                padding-top: 0;
+            }
+            &--top::after,
+            &--bottom::after {
+                display: none;
+            }
+        }
     }
     .footer {
         &__content {
@@ -111,6 +126,11 @@
         }
         &__menu {
             margin-right: 0;
+        }
+    }
+    .partners {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
@@ -138,18 +158,29 @@
         &-btn {
             margin-bottom: 10px;
         }
-    }    
-    .blog__inner {
-        display: block;
+    }   
+    .blog {
+        &__inner {
+            display: block;
+        }
+        &__img-link {
+            display: block;
+        }
+        &__item {
+            margin-bottom: 20px;
+            &-img {
+                width: 100%;
+            }
+        }
     }
-    .blog__item-img {
-        width: 100%;
-    }
-    .blog__img-link {
-        display: block;
-    }
-    .blog__item {
-        margin-bottom: 20px;
+    .about{
+        &__top {
+            padding: 80px 0;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
 }
 
@@ -233,6 +264,14 @@
     .blog__title {
         font-size: 28px;
         line-height: 36px;
+    }
+    .about__content-title,
+    .advantage__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .advantage {
+        padding: 40px 0;
     }
 }
 
