@@ -28,6 +28,9 @@
     .work__item--top {
         margin-left: 150px;
     }
+    .gallery__item {
+        grid-gap: 10px;
+    }
     .footer {
         &__info {
             width: 380px;
@@ -130,6 +133,24 @@
             line-height: 50px;
         }
     }
+    .gallery__control {
+        display: grid;
+        &-btn {
+            margin-bottom: 10px;
+        }
+    }    
+    .blog__inner {
+        display: block;
+    }
+    .blog__item-img {
+        width: 100%;
+    }
+    .blog__img-link {
+        display: block;
+    }
+    .blog__item {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -186,7 +207,6 @@
     }
     .collection {
         grid-template-columns: repeat(1, 1fr);
-
     } 
     .new-collection__title {
         font-size: 28px;
@@ -197,9 +217,22 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
+        &__item--bottom {
+            padding-bottom: 0;
+        }
     }
-    .work__item--bottom {
-        padding-bottom: 0;
+    .gallery {
+        &__item {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__img:first-child {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    } 
+    .blog__title {
+        font-size: 28px;
+        line-height: 36px;
     }
 }
 
@@ -218,8 +251,8 @@
     }
     .decor {
         &__title {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 28px;
+            line-height: 36px;
         }
     }
     .work {
@@ -228,4 +261,14 @@
             line-height: 36px;
         }
     }
-}
+    .blog {
+        &__title,
+        &__item-text-link {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &__items {
+            font-size: 12px;
+        }
+    }
+} 
