@@ -273,6 +273,12 @@
     .advantage {
         padding: 40px 0;
     }
+    .gallery {
+        &-page &__img:nth-child(8) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
 }
 
 @media (max-width: 375px) {
