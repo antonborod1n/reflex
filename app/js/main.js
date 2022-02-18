@@ -10,8 +10,8 @@ $(function () {
         slidesToShow: 10,
         slidesToScroll: 10,
         dots: true,
-        arrows: false
-    }); 
+        arrows: false,
+    });
 
     $('.top__slider').slick({
         dots: true,
@@ -19,15 +19,19 @@ $(function () {
         fade: true,
         autoplay: true,
         autoplaySpeed: 2000
-    }); 
+    });
 });
 
-$ (function(){
+$(function () {
     $('.menu__btn').on('click', function () {
         $('.rightside-menu').removeClass('rightside-menu--close');
     });
     $('.rightside-menu__close').on('click', function () {
         $('.rightside-menu').addClass('rightside-menu--close');
+    });
+
+    $('.menu__btn-menu').on('click', function () {
+        $('.menu').toggleClass('menu--active');
     });
 
     var mixer = mixitup('.gallery__inner', {

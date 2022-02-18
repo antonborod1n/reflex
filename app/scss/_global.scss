@@ -6,7 +6,7 @@ body {
     line-height: 27px;
     @extend %opensans-400;
     overflow-x: hidden;
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .wrapper {
@@ -42,17 +42,21 @@ body {
     padding: 14px 0;
     &__list {
         display: flex;
+        overflow-x: auto;
+    }
+    &__item {
+        position: relative;
+        padding-right: 8px;
     }
     &__item::after {
         content: '/';
-        margin-right: 4px;
+        position: absolute;
     }
     &__item:last-child:after {
         display: none;
     }
     &__link {
         font-size: 14px;
-        line-height: 28px;
         color: $text;
     }   
 }
